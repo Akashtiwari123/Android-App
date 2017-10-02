@@ -1,217 +1,281 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.users.q.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
 
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="360dp"
-        android:layout_height="124dp"
-        android:textSize="35dp"
-        android:text="0"
+    <EditText
+        android:id="@+id/txtCalc"
+        android:layout_width="fill_parent"
+        android:layout_height="116dp"
         android:gravity="right"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintHorizontal_bias="0.0"
-        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
-
-    <Button
-        style="@style/button_style"
-        android:id="@+id/button1"
-        android:text="1"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
-        tools:layout_editor_absoluteY="228dp" />
-
-    <Button
-        android:id="@+id/button2"
-        style="@style/button_style"
-        android:layout_marginLeft="0dp"
-        android:text="2"
-        app:layout_constraintLeft_toRightOf="@+id/button1"
-        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
-        tools:layout_editor_absoluteY="228dp" />
-
-    <Button
-        android:id="@+id/button3"
-        style="@style/button_style"
-        android:layout_marginLeft="0dp"
-        android:text="3"
-        app:layout_constraintLeft_toRightOf="@+id/button2"
-        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
-        tools:layout_editor_absoluteY="228dp" />
-
-    <Button
-        style="@style/button_style"
-        android:id="@+id/button4"
-        android:text="4"
-        android:layout_marginTop="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/button1"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:ignore="HardcodedText,RtlHardcoded" />
-
-    <Button
-        style="@style/button_style"
-        android:id="@+id/button5"
-        android:text="5"
-        android:layout_marginTop="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintLeft_toRightOf="@+id/button4"
-        android:layout_marginLeft="0dp"
-        tools:ignore="HardcodedText,RtlHardcoded" />
-
-    <Button
-        style="@style/button_style"
-        android:id="@+id/button6"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:text="6"
-        app:layout_constraintLeft_toRightOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        tools:ignore="HardcodedText,RtlHardcoded" />
-
-    <Button
-        style="@style/button_style"
-        android:id="@+id/button7"
-        android:text="7"
-        android:layout_marginTop="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:ignore="HardcodedText,RtlHardcoded" />
-
-    <Button
-        style="@style/button_style"
-        android:id="@+id/button8"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:text="8"
-        app:layout_constraintLeft_toRightOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
-        tools:ignore="HardcodedText,RtlHardcoded" />
-
-    <Button
-        style="@style/button_style"
-        android:id="@+id/button9"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:text="9"
-        app:layout_constraintLeft_toRightOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/button6"
-        tools:ignore="HardcodedText,RtlHardcoded" />
-
-    <Button
-        style="@style/button_style"
-        android:id="@+id/button0"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="0dp"
+        android:inputType="none"
+        android:singleLine="true"
         android:text="0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7"
-        tools:ignore="HardcodedText,RtlHardcoded" />
+        android:textSize="56sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+  
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
-    <Button
-        style="@style/operation_button"
-        android:id="@+id/divide"
-        android:text="/"
-        android:layout_marginRight="15dp"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
-        app:layout_constraintLeft_toRightOf="@+id/button3"
-        android:layout_marginLeft="0dp"
-        app:layout_constraintHorizontal_bias="1.0"
-        tools:layout_editor_absoluteY="228dp" />
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="C"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+        
+</LinearLayout>
 
-    <Button
-        style="@style/operation_button"
-        android:id="@+id/multiply"
-        android:text="*"
-        android:layout_marginRight="15dp"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
-        app:layout_constraintLeft_toRightOf="@+id/button6"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="3dp"
-        app:layout_constraintTop_toBottomOf="@+id/divide"
-        app:layout_constraintHorizontal_bias="1.0" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
-    <Button
-        style="@style/operation_button"
-        android:id="@+id/minus"
-        android:text="-"
-        android:layout_marginRight="15dp"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="HardcodedText,RtlHardcoded"
-        app:layout_constraintLeft_toRightOf="@+id/button9"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="-3dp"
-        app:layout_constraintTop_toBottomOf="@+id/multiply"
-        app:layout_constraintHorizontal_bias="0.981" />
+        <Button
+            android:id="@+id/btnSeven"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="7"
 
-    <Button
-        style="@style/operation_button"
-        android:id="@+id/plus"
-        android:text="+"
-        android:layout_marginRight="15dp"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="HardcodedText,RtlHardcoded"
-        app:layout_constraintLeft_toRightOf="@+id/equal"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintHorizontal_bias="0.982"
-        android:layout_marginTop="-3dp"
-        app:layout_constraintTop_toBottomOf="@+id/minus" />
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
 
-    <Button
-        android:id="@+id/clear"
-        style="@style/special_button"
+        <Button
+            android:id="@+id/btnEight"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="8"
 
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:text="AC"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1"
-        tools:ignore="HardcodedText,RtlHardcoded" />
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
 
-    <Button
-        style="@style/special_button"
-        android:id="@+id/del"
-        android:text="del"
-        app:layout_constraintLeft_toRightOf="@+id/clear"
-        android:layout_marginLeft="-10dp"
-        tools:ignore="HardcodedText,RtlHardcoded"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView1"
-        />
+        <Button
+            android:id="@+id/btnNine"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="9"
 
-    <Button
-        style="@style/button_style"
-        android:id="@+id/dot"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:text="."
-        app:layout_constraintLeft_toRightOf="@+id/button0"
-        app:layout_constraintTop_toBottomOf="@+id/button8"
-        tools:ignore="HardcodedText,RtlHardcoded" />
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
 
-    <Button
-        style="@style/button_style"
-        android:id="@+id/equal"
-        android:text="="
-        app:layout_constraintLeft_toRightOf="@+id/dot"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/button9"
-        tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="÷"
 
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
 
-</android.support.constraint.ConstraintLayout>
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="4"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnFive"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="5"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnSix"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="6"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="*"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="1"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnTwo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="2"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnThree"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="3"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="-"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnZero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="0"
+
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnDecimal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="."
+
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="+"
+
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnEquals"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="="
+
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </LinearLayout>
+
+</LinearLayout>
