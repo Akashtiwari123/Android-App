@@ -30,7 +30,19 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="0px"
-            android:text="C"
+            android:text="AC"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="DEL"
             android:textSize="24sp"
             android:textStyle="bold"
             android:typeface="serif" />
