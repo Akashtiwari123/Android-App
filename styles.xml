@@ -7,17 +7,19 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+      <!-- Customize button. -->
     <style name="button_style" parent="AppTheme">
         <item name="android:layout_width">85dp</item>
         <item name="android:layout_height">70dp</item>
         <item name="android:textSize">20dp</item>
     </style>
-
+    <!-- Customize operator button. -->
     <style name="operation_button" parent="AppTheme">
         <item name="android:layout_height">70dp</item>
         <item name="android:layout_width">100dp</item>
         <item name="android:textSize">30dp</item>
     </style>
+      <!-- Customize other button. -->
     <style name="special_button" parent="Animation.AppCompat.Dialog">
         <item name="android:layout_width">180dp</item>
         <item name="android:layout_height">80dp</item>
