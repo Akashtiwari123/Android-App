@@ -13,7 +13,7 @@ import static com.example.vikas.q.R.id.btnC;
 import static com.example.vikas.q.R.id.btnD;
 import static com.example.vikas.q.R.id.btnOne;
 import static com.example.vikas.q.R.id.button1;
-
+//main class
 public class MainActivity extends AppCompatActivity {
 TextView textView;
     @Override
