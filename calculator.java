@@ -9,10 +9,10 @@ import android.widget.Toast;
 
 import static android.R.attr.id;
 import static android.R.attr.x;
-import static com.example.vikas.q.R.id.btnC;
-import static com.example.vikas.q.R.id.btnD;
-import static com.example.vikas.q.R.id.btnOne;
-import static com.example.vikas.q.R.id.button1;
+import static com.example.sky.q.R.id.btnC;
+import static com.example.sky.q.R.id.btnD;
+import static com.example.sky.q.R.id.btnOne;
+import static com.example.sky.q.R.id.button1;
 //main class
 public class MainActivity extends AppCompatActivity {
 TextView textView;
